@@ -1,0 +1,107 @@
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn {
+    background: #212EA0;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1a237e;
+}
+
+.dark-nav {
+    background: #212EA0;
+    transition: 0.5s;
+}
+.menu-icon{
+    display: none;
+}
+/* ------- media query -------*/
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+
+    nav ul li {
+        margin: 10px 5px;
+    }
+}
+
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 25px 0;
+    }
+
+    .btn {
+        margin: 25px 40px;
+        display: block;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}
