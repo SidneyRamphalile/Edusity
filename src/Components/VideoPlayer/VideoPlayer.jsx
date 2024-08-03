@@ -14,7 +14,7 @@ const VideoPlayer = ({playState, setPlayState}) => {
 
   return (
     <div className={`video-player ${playState?'':'hide'}`} ref={player} onClick={closePlayer}>
-      <video src={video} autoPlay controls></video>
+      <video src={video} controls></video>
     </div>
   );
 }
