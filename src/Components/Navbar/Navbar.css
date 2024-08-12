@@ -48,6 +48,7 @@ nav ul li a {
 
 .btn:hover {
     background: #1a237e;
+    color: white;
 }
 
 .dark-nav {
